@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.debugwin.hidden {
+				width: 200px;
+				height: 400px;
+				border: 1px solid #ccc;
+			}
+		</style>
+	</head>
+	<!--<body>
+		<iframe class="debugwin hidden" name="aaa" src="http://localhost/index.html" scrolling="yes"></iframe>
+	</body>-->
+	<frameset rows="73,*,20" cols="*">
+		<!--<frame class="debugwin hidden" name="left" src="http://localhost/index.html">-->
+		<frame class="debugwin hidden" name="left" src="/mikecrm/login.html">
+	</frameset>
+	<script>
+		//		window.onload = function() {
+		//			document.querySelector("iframe").contentWindow.postMessage("主页面消息",
+		//				"*")
+		//		}
+//		window.onload = function() {
+//			document.querySelector("frameset").contentWindow.postMessage("主页面消息",
+//				"*")
+//		}
+//		window.addEventListener('message', function(event) {
+//			console.log(event.data);
+//			//      document.getElementById('message').innerHTML = "收到"
+//			//       + event.origin + "消息：" + event.data;
+//		}, false);
+		//在父页面添加监听器,接收子页面的值：
+		//		window.addEventListener('message', function(e) {
+		//			console.log(e.data);
+		//		}, false);
+		//		window.addEventListener('message', function(event) {
+		//			console.log("2222");
+		//		}, false);
+	</script>
+
+</html>
